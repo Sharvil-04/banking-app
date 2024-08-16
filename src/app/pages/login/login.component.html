@@ -1,0 +1,39 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form [formGroup]="loginForm">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input
+        id="username"
+        type="text"
+        placeholder="Enter your Username"
+        formControlName="userName"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="text"
+        placeholder="Enter your Password"
+        formControlName="password"
+      />
+    </div>
+
+    <button (click)="onSubmit()" [disabled]="loginForm.invalid">Login</button>
+  </form>
+
+  <!-- touching this later -->
+  <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+
+  <div class="links">
+    <div class="forgot-password-link">
+      <a routerLink="/forgot-password">Forgot Password?</a>
+    </div>
+
+    <div class="signup-link">
+      <a routerLink="/register">Sign Up here</a>
+    </div>
+  </div>
+</div>
