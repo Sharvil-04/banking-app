@@ -1,0 +1,25 @@
+.footer-toolbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links button {
+    color: white;
+}

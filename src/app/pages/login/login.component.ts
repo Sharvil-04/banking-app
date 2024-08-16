@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     if(this.loginForm.valid){
-      alert('Login Success!');
+      console.log('Login Success!');
       this.hasError = false;
       this.router.navigate(['/home']);
     }else{

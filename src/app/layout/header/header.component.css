@@ -1,0 +1,15 @@
+.logo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  mat-toolbar {
+    padding: 0 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }

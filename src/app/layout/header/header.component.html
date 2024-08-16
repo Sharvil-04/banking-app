@@ -1,1 +1,13 @@
-<p>header works!</p>
+<mat-toolbar color="primary">
+    <span class="logo">
+        <a routerLink="/home" mat-button>Banking App</a>
+    </span>
+    <span class="spacer"></span>
+    <nav>
+        <button mat-button routerLink="/about-us">About Us</button>
+        <button mat-button routerLink="/services">Services</button>
+        <button mat-button (click)="navigateTo()">
+            {{ isHome ? 'Logout' : 'Login' }}
+        </button>
+    </nav>
+</mat-toolbar>
