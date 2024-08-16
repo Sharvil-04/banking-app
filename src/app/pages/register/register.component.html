@@ -1,1 +1,74 @@
-<p>register works!</p>
+<div class="register-container">
+    <h2>Sign Up!</h2>
+    <form [formGroup]="registerForm">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input
+          id="firstName"
+          type="text"
+          placeholder="Enter your First Name"
+          formControlName="firstName"
+        />
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input
+          id="lastName"
+          type="text"
+          placeholder="Enter your Last Name"
+          formControlName="lastName"
+        />
+      </div>
+      <div class="form-group">
+        <label for="username">User Name</label>
+        <input
+          id="username"
+          type="text"
+          placeholder="Enter your User Name"
+          formControlName="username"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="text"
+          placeholder="Enter your email"
+          formControlName="email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="text"
+          placeholder="Enter your Password"
+          formControlName="password"
+        />
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          id="confirmPassword"
+          type="text"
+          placeholder="Re-Enter your Password"
+          formControlName="confirmPassword"
+        />
+      </div>
+      <button (click)="onSubmit()" [disabled]="registerForm.invalid">Login</button>
+    </form>
+  
+    <!-- touching this later -->
+    <!-- <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p> -->
+  
+    <div class="links">
+      <div class="forgot-password-link">
+        <a routerLink="/forgot-password">Forgot Password?</a>
+      </div>
+  
+      <div class="signup-link">
+        <a routerLink="/login">Already Registerd? Login!</a>
+      </div>
+    </div>
+  </div>
+  
