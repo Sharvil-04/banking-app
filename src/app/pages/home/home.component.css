@@ -1,0 +1,27 @@
+.clickable-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.clickable-card:hover {
+  transform: scale(1.02);
+}
+
+.account-tile {
+  text-align: left;
+}
+
+mat-card {
+  width: 100%;
+}
+
+mat-card-header {
+  background-color: #e0e0e0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+mat-card-content p {
+  margin: 4px 0;
+}

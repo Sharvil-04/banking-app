@@ -15,7 +15,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
-
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
+import { ServiceOfferComponent } from './pages/service-offer/service-offer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { AboutusComponent } from './pages/aboutus/aboutus.component';
     RegisterComponent,
     ForgotPasswordComponent,
     HomeComponent,
-    AboutusComponent
+    AboutusComponent,
+    ServiceOfferComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,9 @@ import { AboutusComponent } from './pages/aboutus/aboutus.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [
     provideAnimationsAsync()
